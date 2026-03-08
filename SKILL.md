@@ -1,6 +1,19 @@
 ---
 name: openclaw-tailscale-remote-access
 description: "Configure or repair OpenClaw remote access over Tailscale with a directly executable workflow: inspect state, apply the gateway config, enable Tailscale Serve over HTTPS, validate browser access, and handle origin, DNS, or pairing failures."
+metadata:
+  openclaw:
+    version: "1.0.1"
+    homepage: "https://github.com/JiangAgentLabs/openclaw-tailscale-remote-access"
+    requires:
+      bins:
+        - "bash"
+        - "python3"
+        - "tailscale"
+        - "systemctl"
+        - "curl"
+      configs:
+        - "~/.openclaw/openclaw.json"
 ---
 
 # OpenClaw Tailscale Remote Access
